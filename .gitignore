@@ -1,0 +1,22 @@
+.venv/
+.vscode/
+data/*.txt
+models/*.json
+**/__pycache__/
+
+# Python bytecode and caches
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# OS specific
+.DS_Store
+Thumbs.db
