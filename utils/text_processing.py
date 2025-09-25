@@ -1,3 +1,6 @@
+import nltk
+nltk.download('all')
+
 import re
 import string
 from nltk.corpus import stopwords
