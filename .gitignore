@@ -1,7 +1,6 @@
 .venv/
 .vscode/
 data/*.txt
-models/*.json
 **/__pycache__/
 
 # Python bytecode and caches
