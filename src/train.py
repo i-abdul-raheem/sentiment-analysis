@@ -2,6 +2,20 @@ from utils.text_processing import text_processing
 import json
 from collections import Counter
 from tqdm import tqdm
+import os
+import gdown
+
+file_path = 'data/test.ft.txt'
+file_id = '1h-pfNVXM7wGimFaFMdhBVLRqqdhrVn17'
+url = f'https://drive.google.com/uc?id={file_id}'
+
+if not os.path.exists(file_path):
+    print(f"{file_path} not found. Downloading from Google Drive...")
+    os.makedirs(os.path.dirname(file_path), exist_ok=True)
+    gdown.download(url, file_path, quiet=False)
+    print("Download complete.")
+else:
+    print(f"{file_path} already exists.")
 
 label_map = {
     '__label__1': 'negative',
